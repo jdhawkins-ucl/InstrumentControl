@@ -1,5 +1,5 @@
 # Instrument Control for Radar Group Lab, UCL
-The following are rough instructions for network based control of the Rohde & Schwarz **RTO2024 Oscilloscope** and **SMA100B Signal Generator** in the 11th floor Radar Group lab.
+Rough instructions for network based control of the Rohde & Schwarz **RTO2024 Oscilloscope** and **SMA100B Signal Generator** in the 11th floor Radar Group lab.
 
 ## General Setup
 The RTO2024 Oscilloscope and SMA100B Signal Generator are both connected via Ethernet to a Netgear GS205 Switch.  It is important to ensure that the instrument(s) being used are properly connected before proceeding, and the host PC to provide the instrumentation control is also connected to the network switch
@@ -163,3 +163,6 @@ t = initialX + (0:arl-1)*xIncrement;
 plot(t, data);
 grid on
 ```
+
+## Complete Scripts
+Complete scripts can be found in *RTO2024.m*, *SMA1008.m* and *SweepAndAcquire.m* for the oscilloscope, sig gen and a frequency sweep and acquire respectively.
