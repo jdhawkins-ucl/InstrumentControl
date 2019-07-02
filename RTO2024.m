@@ -40,6 +40,7 @@ data = zeros(arl, 1);
 
 % Return to continuous acquisition
 invoke(rto2024, 'InitiateAcquisition', 1);
+invoke(rto2024, 'ConfigureTriggerModifier', 1, 1);
 
 % Disconnect from oscilloscope
 disconnect(rto2024);

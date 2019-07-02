@@ -147,6 +147,7 @@ The next step is not crucial, however the 'ReadWaveform' function will stop cont
 ```
 % Return to continuous acquisition
 invoke(rto2024, 'InitiateAcquisition', 1);
+invoke(rto2024, 'ConfigureTriggerModifier', 1, 1);
 ```
 
 As before, we continue to disconnect from the oscilloscope and delete the VISA object.  Then the sampled data is plotted.
